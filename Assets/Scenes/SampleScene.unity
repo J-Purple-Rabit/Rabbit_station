@@ -964,6 +964,14 @@ PrefabInstance:
       propertyPath: pauseGame
       value: 
       objectReference: {fileID: 487300769}
+    - target: {fileID: 2026110307273654294, guid: d3fcfccdf53e0cc4f892da4ea1ee1770, type: 3}
+      propertyPath: slideTime
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2026110307273654294, guid: d3fcfccdf53e0cc4f892da4ea1ee1770, type: 3}
+      propertyPath: slideTimeCounter
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6756618048798980440, guid: d3fcfccdf53e0cc4f892da4ea1ee1770, type: 3}
       propertyPath: m_Name
       value: remi 1

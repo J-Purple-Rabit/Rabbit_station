@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public float sSpeed;
     public float sInput;
 
-    public float slideTime = 0.35f;
+    public float slideTime;
     public float slideTimeCounter;
 
     public bool isSliding;
@@ -49,30 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        if (sInput > 0)
-        {
 
-            isSliding = true;
-            slideTimeCounter = slideTime;
-            playerRb.velocity = Vector2.right * sSpeed;
-
-            if (slideTimeCounter > 0)
-            {
-
-                playerRb.velocity = new Vector2(sInput * sSpeed, playerRb.velocity.y);
-                slideTimeCounter -= Time.deltaTime;
-            }
-            else if (slideTimeCounter < 0)
-            {
-                playerRb.velocity = new Vector2(10, playerRb.velocity.y);
-                isSliding = false;
-            }
-            else
-            {
-                isSliding = false;
-            }
-
-        }
 
         //this code geeps track of whether the player wants to go left or right
         input = Input.GetAxisRaw("Horizontal");
@@ -164,16 +141,33 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        
-        
+
+
+
+
+        playerRb.velocity = new Vector2(input * speed, playerRb.velocity.y);
+
+        if (sInput < 1)
+        {
+            isSliding = false;
+            slideTimeCounter = slideTime;
+        }
+        else
+        {
+            isSliding = true;
+            
+        }
+        if (isSliding == true && slideTimeCounter > 0)
+        {
+            playerRb.velocity = new Vector2(sInput * sSpeed, playerRb.velocity.y);
+            slideTimeCounter -= 1;
+        }
        
 
-            
 
 
-    
-            playerRb.velocity = new Vector2(input * speed, playerRb.velocity.y);
-            isSliding = false;
+        
+          
 
     }
 }
