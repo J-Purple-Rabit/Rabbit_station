@@ -39,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
     //this connects the pause game script so i can use its variables.
     public PauseGame pauseGame;
 
+    public GameOver gameOver;
 
     // Update is called once per frame
     void Update()
@@ -57,18 +58,20 @@ public class PlayerMovement : MonoBehaviour
         //this controlls wheter the sprite is facing either left or right based upon what button the player preses.
         //imput is only ever equal to -1, 0 or 1. -1 being left, 1 being rigt and 0 is not moving.
         //&& pauseGame.isPaused == false just means that if the game is not paused the sprite should flip, but if the game is paused the sprite will not flip.
-        if (input < 0 && pauseGame.isPaused == false)
+        if (input < 0 && pauseGame.isPaused == false && gameOver.isGameOver == false)
         {
 
             spriteRenderer.flipX = true;
 
         }
-        else if (input > 0 && pauseGame.isPaused == false)
+        else if (input > 0 && pauseGame.isPaused == false && gameOver.isGameOver == false)
         {
 
             spriteRenderer.flipX = false;
 
         }
+
+       
 
 
         //returns a true of flase value to whether or not we are on the ground

@@ -6,7 +6,7 @@ public class PauseGame : MonoBehaviour
 {
 
     public bool isPaused;
-
+    public GameOver gameOver;
     public GameObject pausePanel;
 
     // Start is called before the first frame update
@@ -19,17 +19,22 @@ public class PauseGame : MonoBehaviour
     void Update()
     {
         
-        if(Input.GetButtonDown("Pause"))
+        if (Input.GetButtonDown("Pause"))
         {
+            if(gameOver.isGameOver == false)
+            {
+                if (isPaused)
+                {
+                    Resume();
+                }
+                else
+                {
+                    Pause();
+                }
+            }
 
-            if(isPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
+
+            
 
         }
 

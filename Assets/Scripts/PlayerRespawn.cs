@@ -8,7 +8,7 @@ public class PlayerRespawn : MonoBehaviour
     public Vector3 respawnPoint;
     public PauseGame pauseGame;
     public bool isDead = false;
-    
+    public GameOver gameOver;
 
 
     public void RespawnNow()
@@ -23,7 +23,7 @@ public class PlayerRespawn : MonoBehaviour
         if (collision.gameObject.tag == "Death")
         {
             isDead = true;
-            pauseGame.Pause(); 
+            gameOver.gPause(); 
             RespawnNow();
             
         }
@@ -32,9 +32,6 @@ public class PlayerRespawn : MonoBehaviour
             isDead = false;
         }
 
-        void Update()
-        {
-            isDead = false;
-        }
+     
     }
 }
