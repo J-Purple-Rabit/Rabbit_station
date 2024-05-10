@@ -3088,6 +3088,7 @@ GameObject:
   - component: {fileID: 678744607}
   - component: {fileID: 678744606}
   - component: {fileID: 678744605}
+  - component: {fileID: 678744608}
   m_Layer: 5
   m_Name: Controls/Help Button
   m_TagString: Untagged
@@ -3197,6 +3198,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678744603}
   m_CullTransparentMesh: 1
+--- !u!114 &678744608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678744603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9324f2d01ff2f0642bdb73814d82dd32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &696405600 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4179695326423280388, guid: a8cb7a11825aa7147bb52dd2e7ef53b2, type: 3}
