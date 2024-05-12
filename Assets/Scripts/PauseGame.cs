@@ -8,6 +8,7 @@ public class PauseGame : MonoBehaviour
     public bool isPaused;
     public GameOver gameOver;
     public GameObject pausePanel;
+    public GameObject controlsHelpScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -61,8 +62,8 @@ public class PauseGame : MonoBehaviour
 
         pausePanel.SetActive(false);
 
+        controlsHelpScreen.SetActive(false);
 
-       
     }
 
 }
