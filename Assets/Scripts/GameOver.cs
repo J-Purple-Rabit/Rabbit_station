@@ -8,6 +8,7 @@ public class GameOver : MonoBehaviour
 
     public GameObject gameOver;
     public PlayerRespawn playerRespawn;
+    public GameObject controlsHelpScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,14 @@ public class GameOver : MonoBehaviour
                 gResume();
             }
            
+
+        }
+
+        if ( Input.GetButtonDown("Pause") )
+        {
+
+            controlsHelpScreen.SetActive(false);
+            gResume();
 
         }
 
@@ -58,7 +67,7 @@ public class GameOver : MonoBehaviour
 
         gameOver.SetActive(false);
 
-
+        controlsHelpScreen.SetActive(false);
 
     }
 }
