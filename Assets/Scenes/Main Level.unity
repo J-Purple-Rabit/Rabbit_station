@@ -729,7 +729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &149929678
 RectTransform:
   m_ObjectHideFlags: 0
@@ -992,7 +992,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 573107359}
+  m_Father: {fileID: 487300773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.423, y: 0.29500002}
   m_AnchorMax: {x: 0.85800004, y: 1}
@@ -2480,7 +2480,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 269750587}
   - {fileID: 4059866}
   m_Father: {fileID: 487300773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6003,12 +6002,12 @@ MonoBehaviour:
     and enthusiasm in trying out our one-level demo. Your feedback and encouragement
     mean the world to us as we continue to develop and refine our game.
 
-    
+
 
     Minds
     behind the game:
 
-    
+
 
     Patrick Lynch - Game director (Project Lead)
 
@@ -6022,21 +6021,20 @@ MonoBehaviour:
 
     Will Hicks - (Ideator)
 
-    
+
 
     And
     most importantly, thank YOU, the player, for taking the time to experience our
     game. Your passion drives us to create something truly special.
 
-    
 
-    Stay
-    tuned for more updates and exciting developments!
 
-    
+    Stay tuned
+    for more updates and exciting developments!
 
-    Sincerely - Team
-    Cranium'
+
+
+    Sincerely - Team Cranium'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -7673,7 +7671,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Controls
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7737,7 +7735,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2120485112
