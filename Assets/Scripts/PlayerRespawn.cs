@@ -7,7 +7,7 @@ public class PlayerRespawn : MonoBehaviour
 
     public Vector3 respawnPoint;
     public PauseGame pauseGame;
-    public bool isDead = false;
+    public bool isDead;
     public GameOver gameOver;
 
 
