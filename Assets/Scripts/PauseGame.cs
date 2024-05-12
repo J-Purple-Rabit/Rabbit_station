@@ -24,7 +24,7 @@ public class PauseGame : MonoBehaviour
         {
             if(gameOver.isGameOver == false)
             {
-                if (isPaused)
+                if (isPaused == true)
                 {
                     Resume();
                 }

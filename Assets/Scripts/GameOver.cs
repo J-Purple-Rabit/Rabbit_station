@@ -34,8 +34,11 @@ public class GameOver : MonoBehaviour
         if ( Input.GetButtonDown("Pause") )
         {
 
-            controlsHelpScreen.SetActive(false);
-            gResume();
+            if (isGameOver == true)
+            {
+                gResume();
+            }
+
 
         }
 

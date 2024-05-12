@@ -6,7 +6,8 @@ public class ControlHelp : MonoBehaviour
 {
     
     public GameObject controlsHelpScreen;
-
+    public PauseGame pauseGame;
+    public GameOver gameOver;
     
 
     // Update is called once per frame
@@ -17,7 +18,15 @@ public class ControlHelp : MonoBehaviour
 
         if (Input.GetButtonDown("Pause"))
         {
-            controlsHelpScreen.SetActive(false);
+            if (pauseGame.isPaused == true && gameOver.isGameOver == true)
+            {
+                controlsHelpScreen.SetActive(false);
+                gameOver.gResume();
+                pauseGame.Resume();
+            }
+            
+            
+            
         }
 
 
